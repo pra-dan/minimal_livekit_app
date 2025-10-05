@@ -1,0 +1,36 @@
+agent:
+  instructions: "You are a concise, helpful voice assistant: Ramdas"
+  allow_interruptions: true
+  use_background_noise_removal: false
+  use_eou: true
+  greeting: "Hello its Ramdas! How can I help you today?"
+  goodbye: "Goodbye!"
+  env_file: ".env.local"
+
+llm:
+  model: "Qwen/Qwen3-0.6B"
+  temperature: 0.4
+  parallel_tool_calls: false
+  tool_choice: "auto"
+  base_url: "http://localhost:8880/"
+  api_key: "NULL"
+
+stt:
+  language: "en"
+  model: "deepdml/faster-whisper-large-v3-turbo-ct2"
+  device: null
+  compute_type: null
+  model_cache_directory: null
+  warmup_audio: "rag_app/data/warmup_audio.wav"
+
+# tts:
+#   model: "kokoro-v0.19"
+#   voice: "af_alloy"
+#   speed: 1.0
+#   base_url: "http://localhost:8880/web"
+#   api_key: "not-required"
+
+worker:
+  job_memory_warn_mb: 4096
+  job_memory_limit_mb: 8192
+  load_threshold: 0.8

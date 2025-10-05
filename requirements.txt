@@ -1,0 +1,12 @@
+livekit-agents==1.2.0
+python-dotenv
+pyyaml
+soundfile
+openai>=1.40.0
+httpx>=0.27.0
+faster-whisper==1.1.1
+ctranslate2==4.4.0
+livekit-plugins-openai
+livekit-plugins-silero
+livekit-plugins-assemblyai
+livekit-plugins-sarvam
