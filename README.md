@@ -153,5 +153,5 @@ Then visit the LiveKit Agents Playground and join the room to talk with the bot.
 ## Notes
 - LLM uses OpenAI chat completions API. Configure `llm.base_url`, `llm.api_key`, and `llm.model` in `config.yaml`.
 - The default model of Whisper sucks. See SS below 
-![default_fails](/home/prashant/Documents/asmr/rag_app/data/def_stt_llm_suck.png)
+![default_fails](data/def_stt_llm_suck.png)
 The one that actually listens and understands is `"deepdml/faster-whisper-large-v3-turbo-ct2"`.
